@@ -1,7 +1,7 @@
 {
-    "name": "brianium/paratest",
+    "name": "InouRidder/paratest",
     "type": "library",
-    "description": "Parallel testing for PHP",
+    "description": "Parallel testing for PHP | Forked for IRL implementation",
     "keywords": [
         "testing",
         "PHPUnit",
