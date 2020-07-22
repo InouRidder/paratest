@@ -1,5 +1,5 @@
 {
-    "name": "InouRidder/paratest",
+    "name": "irl/paratest",
     "type": "library",
     "description": "Parallel testing for PHP | Forked for IRL implementation",
     "keywords": [
