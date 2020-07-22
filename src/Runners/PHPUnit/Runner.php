@@ -86,7 +86,9 @@ class Runner extends BaseRunner
                 $this->acquireToken($tokenData['token']);
                 $env = [
                     'TEST_TOKEN' => $tokenData['token'],
-                    'UNIQUE_TEST_TOKEN' => $tokenData['unique']
+                    'UNIQUE_TEST_TOKEN' => $tokenData['unique'],
+                    // ADDED BY INOU; this way we can identify the number of the process. tokens will be generated per amount of proccesses set to run;
+                    'PROCESS_NUMBER' => array_search($this->tokens, $tokenData['token'])
                 ] + Habitat::getAll();
                 $this->running[$tokenData['token']] = \array_shift($this->pending)
                     ->run($opts->phpunit, $opts->filtered, $env, $opts->passthru, $opts->passthruPhp);
